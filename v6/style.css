@@ -1,0 +1,166 @@
+/* ------ Global Styles ------ */
+  body{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    font-family:calibri, 'trebuchet ms', arial;
+    background-color:#F3F2EE;
+    font-size:16px;
+  }
+  img a:link, img a:visited{
+    border:none;
+  }
+  a:link, a:visited{
+    color:#004cff;
+    text-decoration:none;
+  }
+  h1, h2, h3, h4, h5, h6{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+  }
+  h1{
+    font-size:1.8em;
+    border-bottom:1px solid #D2CFC3;
+  }
+  p{
+    margin:0px 0px 0px 0px;
+  }
+
+
+/* ------ Layout/Structural Elements ------ */
+  div#wrapper{
+    position:absolute;
+    top:40px;
+    left:50%;
+    margin-left:-380px;
+    width:720px;
+    width:760px;
+    margin:0px 0px 0px -380px;
+  }
+  div#body{
+    width:720px;
+    margin:10px 10px 10px 0px;
+    float:left;
+    display:inline;
+  }
+  /* Header */
+  div#header{
+    padding:20px 20px 20px 20px;
+    background-color:#004cff;
+    border:1px solid #D2CFC3;
+    height:50px;
+    color:white;
+  }
+    div#logowrapper{
+    float:left;
+    }
+      img#logo{
+        border:none;
+      }
+    span#slogan{
+      font-size:15px;
+    }
+    ul#menu{
+      list-style:none;
+      padding:15px 0px 0px 0px;
+      margin:0px 0px 0px 0px;
+      float:right;
+    }
+      ul#menu li{
+        list-style:none;
+        padding:0px 15px 0px 0px;
+        margin:0px 0px 0px 0px;
+        float:left;
+      }
+        ul#menu li a, ul#menu li a:visited{
+          text-decoration:underline;
+          color:white;
+          font-size:20px;
+        }
+  /* Footer */
+  div#footer{
+    padding:10px 10px 5px 10px;
+    margin:10px 0px 0px 0px;
+    background-color:#272727;
+    border:1px solid #D2CFC3;
+    height:25px;
+    color:white;
+    clear:both;
+  }
+    div#footer a, div#footer a:visited{
+      color:white;
+    }
+    span#footermenu{
+      float:left;
+    }
+    span#copyright{
+      float:right;
+    }
+
+/* ------ Classes ------ */
+  .box{
+    border:1px solid #D2CFC3;
+    background-image:url('http://excalo.com/static/img/shadow.jpg');
+    background-repeat:repeat-x;
+    background-color:white;
+    padding:20px 20px 20px 20px;
+    margin:10px 0px 0px 0px;
+  }
+  .project{
+    width:333px;
+  }
+    .project h1{
+      font-size:20px;
+      background-color:#004CFF;
+      border:1px solid #D2CFC3;
+      color:white;
+      padding:5px 5px 5px 5px;
+      margin:-10px -10px 5px -10px;
+    }
+    .project a:link, .project a:visited{
+      color:white;
+    }
+  .odd{
+    float:left;
+    margin:0px 10px 10px 0px;
+  }
+  .even{
+    float:right;
+    margin:0px 0px 0px 0px;
+  }
+
+/* ------ Old & Unused ------ */
+  div#sidebar{
+    width:250px;
+    float:right;
+    display:inline;
+  }
+    div#sidebar h1{
+      font-size:20px;
+      background-color:#004cff;
+      border:1px solid #D2CFC3;
+      color:white;
+      padding:5px 5px 5px 5px;
+      margin:-10px -10px 5px -10px;
+    }
+  form#login{
+    margin-bottom:0px;
+  }
+    form#login input.text{
+      width:120px;
+      margin:1px 0px 1px 0px;
+    }
+    form#login input#password{
+      margin-left:4px;
+    }
+  input{
+    border:1px solid #D2CFC3;
+    background-color:white;
+    font-size:14px;
+  }
+    input.text{
+      background-image:url('http://excalo.com/static/img/shadow.jpg');
+      background-repeat:repeat-x;
+    }
+    input.button{
+      padding:2px 2px 2px 2px;
+    }

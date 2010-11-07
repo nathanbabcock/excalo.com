@@ -1,0 +1,19 @@
+body{
+  font-family:"Calibri", "Verdana", "Trebuchet MS", "Arial";
+}
+
+img.header{
+display:none;
+}
+
+blockquote div.author{
+  float:right;
+  padding-right:100px;
+  font-style:normal;
+}
+
+blockquote div.author div.details{
+  padding-left:10px;
+  font-size:0.7em;
+  margin-bottom:10px;
+}

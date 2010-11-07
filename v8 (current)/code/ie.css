@@ -1,0 +1,51 @@
+/* ie.css */
+
+/*===============================================*/
+/*================>>> Global <<<=================*/
+/*===============================================*/
+
+/* Fixes height of buttons */
+a.button_mid{
+	padding:6px 6px 10px 6px;
+}
+
+/* Fixes a gap in buttons */
+img.button_right{
+	margin-left:-3px;
+}
+img.button_left_iefix{
+	margin-right:-3px;
+}
+
+li.menuitem{
+	border-left:1px solid #535353;
+}
+
+li.menuitem_first{
+	border-left:none;
+}
+
+input.upload{
+	width:343px;
+}
+input.file{
+	width:440px;
+}
+
+/*===============================================*/
+/*=================>>> Home <<<==================*/
+/*===============================================*/
+
+/* Fixes centering of button container */
+div#buttoncontainer{
+	margin:10px 0 0 343px;
+}
+
+/*===============================================*/
+/*=================>>> Order <<<=================*/
+/*===============================================*/
+
+/* Fixes width of halfcols */
+div.halfcol_l,div.halfcol_r{
+	width:215px;
+}

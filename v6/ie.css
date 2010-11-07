@@ -1,0 +1,6 @@
+div#body{
+  width:759px; /*IE7: Makes body correct width*/
+}
+div#footer{
+  padding-bottom:10px;/*IE7: Makes footer correct height*/
+}

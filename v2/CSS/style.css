@@ -1,0 +1,78 @@
+body{
+  font-family:"Calibri", "Verdana", "Trebuchet MS", "Arial";
+  background-color:#98DFF4;
+  color:black;
+}
+
+div.wrapper{
+  position:absolute;
+  left:50%;
+  width:802px;
+  margin-left:-401px;
+  top:50px;
+}
+
+div.wrapper img.header{
+  border:none;
+}
+
+div.wrapper div.body{
+  background-image:url('bodybg.png');
+  width:800px;
+  background-repeat:repeat-y;
+  background-position:left;
+  margin-top:-4px;
+  padding:4px 0px 4px 30px;
+}
+
+div.wrapper div.footer{
+  background-image:url('footer.jpg');
+  background-repeat:no-repeat;
+  height:119px;
+  padding:20px 20px 20px 20px;
+  text-align:center;
+  font-size:1.2em;
+  font-weight:bolder;
+}
+
+h1, p{
+  width:736px;
+}
+
+blockquote, hr{
+  width:650px;
+}
+
+blockquote{
+  background-image:url('blockquote.jpg');
+  background-repeat:no-repeat;
+  padding-left:45px;
+  min-height:2em;
+  font-style:italic;
+}
+
+blockquote div.author{
+  float:right;
+  padding-right:100px;
+  font-style:normal;
+}
+
+blockquote div.author div.details{
+  padding-left:10px;
+  font-size:0.7em;
+  margin-bottom:10px;
+}
+
+* html blockquote{
+  height: 2em;
+}
+
+h1{
+margin-top:0px;
+margin-bottom:0px;
+}
+
+a{
+  color:#BFEFFD;
+  text-decoration:none;
+}

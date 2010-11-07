@@ -1,0 +1,423 @@
+/* main.css */
+
+/*===============================================*/
+/*=================>>> Global <<<================*/
+/*===============================================*/
+
+/* ---------- Resets ---------- */
+*{
+	font-family:Tahoma, Geneva, sans-serif;
+}
+body{
+	padding:0;
+	margin:0;
+}
+div.clear{
+	clear:both;
+}
+strong{
+	font-weight:bold;
+}
+
+h2, h3, h4, h5, h6{
+	letter-spacing:-1px;
+	font-weight:normal;
+	background-color:none;
+}
+h2{
+	margin:19px 0 10px 0;
+	text-align:center;
+	border-bottom:1px double #DFDFDF;
+}
+h3{
+	color:#258300;
+	font-weight:bold;
+	margin:0 0 0 0;
+	padding:0 10px;
+}
+body#about h3, body#terms h3, body#privacy h3{
+	color:#258300;
+	font-size:24px;
+	font-weight:normal;
+	padding:0 0 0 0;
+}
+h4{
+	color:#258300;
+	font-weight:bold;
+	margin:0 0 10px 0;
+}
+hr{
+	background-color:#DFDFDF;
+	color:#DFDFDF;
+	height:1px;
+	border:0;
+	margin: 15px 0;
+}
+label{
+	font-weight:bold;
+	color:#258300;
+	letter-spacing:-1px;
+}
+input.text, textarea, input.upload{
+	border:1px solid #DFDFDF;
+	padding:4px;
+	color:#3F3F3F;
+	font-size:17px;
+}
+input.text{
+	width:215px;
+}
+a img{
+	border:none;
+}
+a.clean{
+	outline:none;
+}
+
+a{
+	color:#0085fe;
+	text-decoration:none;
+}
+ul{
+	margin-bottom:0px;
+}
+.separator{
+	font-family:Arial;
+}
+
+/* ---------- Text-Alignment ---------- */
+.center{
+	text-align:center;
+}
+
+/* ---------- Color Scheme ---------- */
+.green{
+	color:#258300;
+}
+.blue{
+	color:#0085fe;
+}
+.red{
+	color:#f12d00;
+}
+
+
+/* ------------ Buttons ------------ */
+div.button{
+	float:left;
+	cursor:pointer;cursor:hand;
+}
+img.button_left,.button_mid,img.button_right{
+	float:left;
+}
+.button_mid{
+	height:23px;
+	padding:6px 6px 6px 6px;
+	color:white;
+	text-decoration:none;
+	border:0;
+	font-size:16px;
+	cursor:pointer;cursor:hand;
+	margin:0 0 0 0;
+}
+input.button_mid{
+	height:35px;
+	padding:0 6px 6px 6px;
+}
+.button_red{
+	background:url('img/buttons/red_mid.png') repeat-x;
+}
+.button_blue{
+	background:url('img/buttons/blue_mid.png') repeat-x;
+}
+.button_green{
+	background:url('img/buttons/green_mid.png') repeat-x;
+}
+
+/* ------------ Columns ------------ */
+div.threecol{
+	float:left;
+	width:300px;
+	padding:10px;
+}
+
+div.twocol{
+	float:left;
+	width:460px;
+	padding:10px;
+}
+
+div.centercol{
+	width:460px;
+	padding:10px;
+	margin:0 auto 0 auto;
+}
+
+div.halfcol_l{
+	width:225px;
+	float:left;
+}
+div.halfcol_r{
+	float:right;
+	width:225px;
+}
+
+/*===============================================*/
+/*=================>>> Layout <<<================*/
+/*===============================================*/
+
+/* ------------------- Header --------------- */
+div#header{
+	height:100px;
+	width:100%;
+	background:black url('img/headerbg_v1.jpg') repeat-x;
+	color:white;
+	text-align:center;
+}
+/* -- Logo -- */
+	h1{
+		background:url('img/logobg_v1.png') no-repeat;
+		width:136px;
+		height:60px;
+		color:white;
+		letter-spacing:-3px;
+		font-weight:normal;
+		font-size:46px;
+		text-align:center;
+		margin:10px 0 0 10px;
+		float:left;
+	}
+	h1 a, h1 a:visited, h1 a:hover{
+		color:white;
+		text-decoration:none;
+	}
+/* -- Menu -- */
+	ul#menu{
+		margin:30px 0;
+		padding:0;
+		list-style-type:none;
+		float:right;
+	}
+	li.menuitem{
+		display:inline;
+		padding:25px;
+		background-image:url('img/menubg_v1.png');
+		background-repeat:no-repeat;
+		background-position:right top;
+	}
+	li#menuitem_last{
+		background-image:none;
+	}
+	ul#menu li a, ul#menu li a:hover, ul#menu li a:visited{
+		color:white;
+		text-decoration:none;
+	}
+	body#home a.home, body#order a.order, body#about a.about, body#portfolio a.portfolio, body#contact a.contact, body#terms a.terms, body#privacy a.privacy{
+		color:white;
+		text-decoration:none;
+		border-bottom:1px solid white;
+	}
+/* ------------------- Body -------------------- */
+div#body{
+	width:100%;
+	background:white url('img/subheaderbg.png') repeat-x top left;
+	text-align:center;
+}
+	div#body div.content{
+		text-align:left;
+	}
+/* ------------------- Footer ------------------ */
+div#footer{
+	width:100%;
+	background:black url('img/footerbg_v1.jpg') repeat-x;
+	color:white;
+	padding:10px 0 10px 0;
+	text-align:center;
+	font-size:14px;
+}
+div#footer_left{
+	width:570px;
+	float:left;
+	text-align:left;
+}
+div#footer_right{
+	width:200px;
+	float:right;
+	text-align:right;
+}
+
+/* -- Footer Menu -- */
+	ul.footermenu{
+		margin:0 0 2px 0;
+		padding:0;
+		list-style-type:none;
+		font-weight:bold;
+	}
+	li.footermenuitem{
+		display:inline;
+	}
+	li.footermenuitem a{
+		color:white;
+		text-decoration:none;
+	}
+/* -- Copyright and Validation-- */
+	span#copyright, span#validation{
+		color:#c6c6c6;
+		font-size:13px;
+	}
+	span#copyright a, span#validation a{
+		color:#c6c6c6;
+		text-decoration:underline;
+	}
+	span#validation a{
+		text-decoration:none;
+	}
+div.content{
+	width:960px;
+	margin:0 auto 0 auto;
+	padding:10px;
+}
+
+/*===============================================*/
+/*========>>> Page-Specific Elements <<<=========*/
+/*===============================================*/
+
+/* ------------------- Home ------------------ */
+
+/* -- Subheader -- */
+div#subheader{
+	width:100%;
+	background-color:#dff0ff;
+	text-align:center;
+}
+	div#subheader div.content{
+		text-align:center;
+	}
+
+body#home div#body{
+	background-image:none;
+}
+img#psd2html{
+	font-size:46px; /* Affects size of alt text */
+	margin-bottom:-10px;
+}
+span#absolutelyfree{
+	font-size:50px;
+	font-weight:bold;
+	letter-spacing:-2px;
+}
+div#buttoncontainer{
+	margin:10px 0 0 355px;
+}
+body#home div.threecol{
+	text-align:center;
+}
+body#home div.threecol h2{
+	margin:0 0 0 5px;
+	padding:0;
+	display:inline;
+	font-weight:normal;
+	letter-spacing:-1px;
+	border:0;
+}
+div.threecol img.icon{
+	vertical-align:middle;
+}
+body#home div.threecol p{
+	margin:10px 0 0 0;
+	padding:0 15px 0 15px;
+	text-align:left;
+	font-size:17px;
+}
+
+/* ------------------- Order ------------------ */
+
+body#order h3{
+	float:left;
+	position:relative;
+	margin-top:-13px;
+	background-color:white;
+}
+body#order h4{
+	float:left;
+}
+img.opener{
+	background-color:white;
+	margin:10px 0 0 200px;
+	width:18px;
+	padding:0 6px 0 6px;
+	position:relative;
+	float:left;
+	display:none;
+}
+div.config_group{
+	border:1px solid #DFDFDF;
+	padding:0px 20px 20px;
+	margin:10px 0 30px 0;
+	color:#3F3F3F;
+}
+	div.config_group p.description{
+		font-weight:bold;
+	}
+	div.config_group label{
+		font-weight:normal;
+		color:#3F3F3F;
+		letter-spacing:0;
+	}
+	div.config_group p{
+		clear:both;
+		margin:20px 0 10px 0;
+	}
+ul.radiolist{
+	margin:0;
+	list-style-type:none;
+	padding:0;
+}
+p.form_notes{
+	margin:15px 0 15px 0;
+	border:1px solid #7FC2FF;
+	background-color:#EDF5FD;
+	padding:15px;
+}
+body#order input#name,body#order input#email, body#order textarea#notes{
+	width:100%;
+}
+
+/* ------------------- About ------------------ */
+body#about p{
+	font-size:17px;
+}
+
+/* ------------------- Terms ------------------ */
+body#terms h4{
+	font-size:18px;
+}
+
+/* ------------------- Privacy Policy ------------------ */
+body#privacy p{
+	margin:5px 0 10px 0;
+	font-size:17px;
+}
+body#privacy div#body ul{
+	margin:0 0 10px 0;
+}
+
+/* ------------------- Portfolio ------------------ */
+p.portfolio_description{
+	font-size:15px;
+	padding:0 15px 0 15px;
+	margin:0 0 0 0;
+}
+a.portfolio_link{
+	font-size:13px;
+	margin:0 0 0 13px;
+	outline:0;
+}
+
+/* ------------------- Contact ------------------ */
+body#contact div.halfcol_r{
+	margin-top:-18px;
+}
+body#contact input.text{
+	width:100%;
+}

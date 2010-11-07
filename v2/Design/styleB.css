@@ -1,0 +1,44 @@
+body{
+  margin:0px;
+  font-family:"Calibri";
+  background-color:#98DFF4;
+}
+
+img.header{
+	position:relative;
+  left:50%;
+  width:802px;
+  margin-left:-401px;
+  height:270px;
+  top: 30px;
+  border:none;
+  z-index:1;
+}
+
+div.body{
+  margin-top:-225px;
+  width:802px;
+  margin-left:-401px;
+  position:absolute;
+  left:50%;
+  height:700px;
+  z-index:0;
+  background-image:url('../Images/testbodybgshadow.png');
+  background-repeat:repeat-y;
+}
+
+div.footer{
+  height:118px;
+  width:802px;
+  background-image:url('footer.png');
+  background-repeat:no-repeat;
+  z-index:2;
+  position:absolute;
+  left:50%;
+  margin-left:-401px;
+  margin-top:365px;
+  text-align:center;
+  font-size:1.2em;
+  padding-top:80px;
+  font-weight:bolder;
+}

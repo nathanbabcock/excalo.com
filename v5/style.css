@@ -1,0 +1,134 @@
+  body{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    font-family:calibri, 'trebuchet ms', arial;
+    background-color:#F3F2EE;
+    font-size:16px;
+  }
+  div#wrapper{
+    position:absolute;
+    top:40px;
+    left:50%;
+    margin-left:-380px;
+    width:720px;
+  }
+  div#header{
+    padding:20px 20px 20px 20px;
+    background-color:#004cff;
+    border:1px solid #D2CFC3;
+    height:50px;
+    color:white;
+  }
+  div#footer{
+    padding:10px 10px 5px 10px;
+    background-color:#272727;
+    border:1px solid #D2CFC3;
+    height:25px;
+    color:white;
+    clear:both;
+  }
+  div#footer a, div#footer a:visited{
+    text-decoration:none;
+    color:white;
+  }
+  span#footermenu{
+    float:left;
+  }
+  span#copyright{
+    float:right;
+  }
+  img a:link, img a:visited{
+    border:none;
+  }
+  a:link, a:visited{
+    color:#004cff;
+    text-decoration:none;
+  }
+  div#logowrapper{
+    float:left;
+  }
+  span#slogan{
+    font-size:15px;
+  }
+  ul#menu{
+    list-style:none;
+    padding:15px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    float:right;
+  }
+  ul#menu li{
+    list-style:none;
+    padding:0px 15px 0px 0px;
+    margin:0px 0px 0px 0px;
+    float:left;
+  }
+  ul#menu li a, ul#menu li a:visited{
+    text-decoration:underline;
+    color:white;
+    font-size:20px;
+  }
+  .box{
+    border:1px solid #D2CFC3;
+    background-image:url('shadow.jpg');
+    background-repeat:repeat-x;
+    background-color:white;
+    padding:20px 20px 20px 20px;
+    margin:10px 0px 0px 0px;
+  }
+  div#wrapper{
+    position:absolute;
+    left:50%;
+    width:760px;
+    margin:0px 0px 0px -380px;
+  }
+  div#body{
+    width:458px;
+    margin:10px 10px 10px 0px;
+    float:left;
+    display:inline;
+  }
+  div#sidebar{
+    width:250px;
+    float:right;
+    display:inline;
+  }
+  h1, h2, h3, h4, h5, h6{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+  }
+  h1{
+    font-size:32px;
+  }
+  p{
+    margin:0px 0px 10px 0px;
+  }
+  div#sidebar h1{
+    font-size:20px;
+    background-color:#004cff;
+    border:1px solid #D2CFC3;
+    color:white;
+    padding:5px 5px 5px 5px;
+    margin:-10px -10px 5px -10px;
+  }
+  form#login{
+    margin-bottom:0px;
+  }
+  form#login input.text{
+    width:120px;
+    margin:1px 0px 1px 0px;
+  }
+  form#login input#password{
+    margin-left:4px;
+  }
+  input{
+    border:1px solid #D2CFC3;
+    background-color:white;
+    font-size:14px;
+  }
+  input.text{
+    background-image:url('shadow.jpg');
+    background-repeat:repeat-x;
+  }
+  input.button{
+    padding:2px 2px 2px 2px;
+  }

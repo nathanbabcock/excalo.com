@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/ html;charset=utf-8">
+		<title>Excalo - PSD-2-HTML absolutely free!</title>
+		<link rel="stylesheet" href="main.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="fileinput.css" type="text/css" media="screen">
+		<!--[if IE]>
+			<link rel="stylesheet" href="ie.css" type="text/css">
+		<![endif]-->
+		<!--[if lte IE 6]>
+			<script type="text/javascript" src="supersleight-min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="lib.js"></script>
+		<script type="text/javascript">
+		window.onload=function(){
+			// Init collapsible option groups
+			for(var i=1;i<=5;i++){
+				document.getElementById("config_content_"+i).style.display="none";
+				document.getElementById("config_opener_"+i).style.display="inline";
+			}
+			
+			// Init CSS stylable file uploads
+			initFileUploads();
+		}
+		</script>
+	</head>
+	<body id="order">
+		<div id="header"><!-- [HEADER] -->
+			<div class="content">
+				<h1><a href="http://excalo.com/" class="clean">excalo</a></h1> <!-- Logo -->
+				<!-- Menu -->
+				<ul id="menu">
+					<li class="menuitem menuitem_first"><a href="index.htm" class="home">Home</a></li>
+					<li class="menuitem"><a href="order.htm" class="order">Order</a></li>
+					<li class="menuitem"><a href="about.htm" class="about">About</a></li>
+					<li class="menuitem"><a href="portfolio.htm" class="portfolio">Portfolio</a></li>
+					<li class="menuitem" id="menuitem_last"><a href="contact.htm" class="contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="body"><!--[BODY] -->
+			<div class="content">
+				<h2>Request your <strong class="green">free PSD to HTML</strong> order now!</h2>
+				<form method="GET" action="submit.php">
+					<div class="twocol"><!--[column 1]-->
+						<div class="config_group"><!-- Layout -->
+							<h3>Layout</h3>
+							<p class="description">Options regarding the layout and structure of your website.</p>
+							<div id="config_content_1">
+								<hr>
+								
+								<h4>Layout Width</h4>
+								<p>A flexible layout will automatically resize to fit the user's browser size. Fixed layouts stay the same regardless of the size of the browser.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="l_width" id="l_width_1"> <label for="l_width_1">Fixed</label></li>
+									<li><input type="radio" name="l_width" id="l_width_2"> <label for="l_width_2">Flexible</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Horizontal Alignment</h4>
+								<p>The horizontal alignment of your website.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="l_horiz" id="l_horiz_1"> <label for="l_horiz_1">Center</label></li>
+									<li><input type="radio" name="l_horiz" id="l_horiz_2"> <label for="l_horiz_2">Left</label></li>
+									<li><input type="radio" name="l_horiz" id="l_horiz_3"> <label for="l_horiz_3">Right</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Vertical Alignment</h4>
+								<p>The vertical alignment of your website.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="l_vert" id="l_vert_1"> <label for="l_vert_1">Middle</label></li>
+									<li><input type="radio" name="l_vert" id="l_vert_2"> <label for="l_vert_2">Top</label></li>
+									<li><input type="radio" name="l_vert" id="l_vert_3"> <label for="l_vert_3">Bottom</label></li>
+								</ul>
+							</div>
+							<a href="javascript:toggle('1')" class="clean"><img src="img/plus.png" alt="" class="opener" id="config_opener_1"></a>
+						</div>
+						<div class="config_group"><!-- Markup -->
+							<h3>Markup</h3>
+							<p class="description">Advanced options regarding the HTML markup of your website.</p>
+							<div id="config_content_2">
+								<hr>
+								
+								<h4>Optimization</h4>
+								<p>If you choose documentation, the code will be organized and explained through the use of comments. If you choose speed, all comments will be removed and the code will be compressed, providing a faster load time.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="m_optim" id="m_optim_doc"> <label for="m_optim_doc">Documentation</label></li>
+									<li><input type="radio" name="m_optim" id="m_optim_speec"> <label for="m_optim_speec">Speed</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Doctype</h4>
+								<p>If you wish, you can specify a certain doctype for your site to be coded in.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="m_doctype" id="m_doctype_htmltrans"> <label for="m_doctype_htmltrans">HTML 4.01 Transitional</label></li>
+									<li><input type="radio" name="m_doctype" id="m_doctype_htmlstrict"> <label for="m_doctype_htmlstrict">HTML 4.01 Strict</label></li>
+									<li><input type="radio" name="m_doctype" id="m_doctype_xhtmltrans"> <label for="m_doctype_xhtmltrans">XHTML 1.0 Transitional</label></li>
+									<li><input type="radio" name="m_doctype" id="m_doctype_xhtmlstrict"> <label for="m_doctype_xhtmlstrict">XHTML 1.0 Strict</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>PHP <abbr title="Server Side Include">SSI</abbr> Templating</h4>
+								<p>Implementing PHP <abbr title="Server Side Include">SSI</abbr> templating means that your website will be divided into logical parts (like header, footer, etc). These individual files will be fetched from the server using PHP includes. This makes it easier to make site-wide changes, because you only have to edit one file.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="m_SSI" id="m_SSI_y"> <label for="m_SSI_y">Yes</label></li>
+									<li><input type="radio" name="m_SSI" id="m_SSI_n"> <label for="m_SSI_n">No</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Browser Compatibility</h4>
+								<p>Implementing PHP <abbr title="Server Side Include">SSI</abbr> templating means that your website will be divided into logical parts (like header, footer, etc). These individual files will be fetched from the server using PHP includes. This makes it easier to make site-wide changes, because you only have to edit one file.</p>
+								<ul class="radiolist">
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_ff" checked="checked" disabled="disabled"><label for="m_browsers_ff">Mozilla Firefox</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_ie8"><label for="m_browsers_ie8">Internet Explorer 8</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_ie7"><label for="m_browsers_ie7">Internet Explorer 7</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_ie6"><label for="m_browsers_ie6">Internet Explorer 6</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_ch"><label for="m_browsers_ch">Google Chrome</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_sf"><label for="m_browsers_sf">Apple Safari</label></li>
+									<li><input type="checkbox" name="m_browsers" id="m_browsers_o"><label for="m_browsers_o">Opera</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Section 508 Compliance</h4>
+								<p>The Americans with Disabilities Act, Section 508 is a set of standards for accessibility on the web.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="m_508" id="m_508_n"> <label for="m_508_n">No</label></li>
+									<li><input type="radio" name="m_508" id="m_508_y"> <label for="m_508_y">Yes</label></li>
+								</ul>
+							</div>
+							<a href="javascript:toggle('2')" class="clean"><img src="img/plus.png" alt="" class="opener" id="config_opener_2"></a>
+						</div>
+						<div class="config_group"><!-- CSS -->
+							<h3>CSS</h3>
+							<p class="description">Advanced options regarding the CSS coding of your website.</p>
+							<div id="config_content_3">
+								<hr>
+								
+								<h4>Reset Stylesheet</h4>
+								<p>Using a reset stylesheet helps ensure that your website will look the same across all browsers.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="css_reset" id="css_reset_none"> <label for="css_reset_none">None</label></li>
+									<li><input type="radio" name="css_reset" id="css_reset_meyer"> <label for="css_reset_meyer">Eric Meyer's CSS Reset</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Print Stylesheet</h4>
+								<p>Add an additional stylesheet to be used when printing. Only select this if it is likely that your website will be printed.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="css_print" id="css_print_n"> <label for="css_print_n">No</label></li>
+									<li><input type="radio" name="css_print" id="css_print_y"> <label for="css_print_y">Yes</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>w3 Valid CSS</h4>
+								<p>This means that the main stylesheet will be valid according to w3 standads. <b>However</b>, if any non-standard browser workarounds are required, they will be placed in a seperate stylesheet which may not validate.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="css_valid" id="css_valid_n"> <label for="css_valid_n">No</label></li>
+									<li><input type="radio" name="css_valid" id="css_valid_y"> <label for="css_valid_y">Yes</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>No Inline Styles</h4>
+								<p>This garuntees that <em>all</em> styles will be stored in an external stylesheet. <strong>Even if this is not selected, the bulk of the CSS will still be in an external file.</strong></p>
+								<ul class="radiolist">
+									<li><input type="radio" name="css_inline" id="css_inline_y"> <label for="css_inline_y">No Inline CSS</label></li>
+									<li><input type="radio" name="css_inline" id="css_inline_n"> <label for="css_inline_n">Some Inline CSS</label></li>
+								</ul>
+							</div>
+							<a href="javascript:toggle('3')" class="clean"><img src="img/plus.png" alt="" class="opener" id="config_opener_3"></a>
+						</div>
+						<div class="config_group"><!-- Javascript -->
+							<h3>Javascript</h3>
+							<p class="description">Advanced options regarding the Javascript coding of your website.</p>
+							<div id="config_content_4">
+								<hr>
+								
+								<h4>Javascript Frameworks</h4>
+								<p>If you prefer a specific javascript framework, or prefer that no framework is used, specify it here.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="js_framework" id="js_framework_any"> <label for="js_framework_any">Don't care/Any</label></li>
+									<li><input type="radio" name="js_framework" id="js_framework_jquery"> <label for="js_framework_jquery">Jquery</label></li>
+									<li><input type="radio" name="js_framework" id="js_framework_mootools"> <label for="js_framework_mootools">Mootools</label></li>
+									<li><input type="radio" name="js_framework" id="js_framework_none"> <label for="js_framework_none">None</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Unobtrusive Javascript</h4>
+								<p>This means that javascript effects will be applied as an enhancement to the user experience, and if a user does not have javascript, their experience will degrade gracefully and still be fully functional.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="js_unobtrusive" id="js_unobtrusive_n"> <label for="js_unobtrusive_n">No</label></li>
+									<li><input type="radio" name="js_unobtrusive" id="js_unobtrusive_y"> <label for="js_unobtrusive_y">Yes</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Drop-Down Menu</h4>
+								<p>Please specify if you need a javascript drop-down menu.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="js_dropdown" id="js_dropdown_n"> <label for="js_dropdown_n">None</label></li>
+									<li><input type="radio" name="js_dropdown" id="js_dropdown_single"> <label for="js_dropdown_single">Single-level Drop-Down</label></li>
+									<li><input type="radio" name="js_dropdown" id="js_dropdown_multi"> <label for="js_dropdown_multi">Multi-level Drop-Down</label></li>
+								</ul>
+							</div>
+							<a href="javascript:toggle('4')" class="clean"><img src="img/plus.png" alt="" class="opener" id="config_opener_4"></a>
+						</div>
+						<div class="config_group"><!-- Miscellaneous -->
+							<h3>Miscellaneous</h3>
+							<p class="description">Other miscellaneous options.</p>
+							<div id="config_content_5">
+								<hr>
+								
+								<h4>Non-Standard Fonts</h4>
+								<p>If your design incorporates non web-standard fonts, you should choose one of the options below. Please note that you need to include a copy of any non-standard fonts with your design.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="misc_fonts" id="misc_fonts_sIFR"> <label for="misc_fonts_sIFR">sIFR</label></li>
+									<li><input type="radio" name="misc_fonts" id="misc_fonts_cufon"> <label for="misc_fonts_cufon">Cufon</label></li>
+									<li><input type="radio" name="misc_fonts" id="misc_fonts_typekit"> <label for="misc_fonts_typekit">Typekit</label></li>
+									<li><input type="radio" name="misc_fonts" id="misc_fonts_fontface"> <label for="misc_fonts_fontface">CSS3 @font-face</label></li>
+									<li><input type="radio" name="misc_fonts" id="misc_fonts_img"> <label for="misc_fonts_img">Static Images</label></li>
+								</ul>
+								
+								<hr>
+								
+								<h4>Favicon</h4>
+								<p>If you wish to include a favicon in your site, please include it with your design as a seperate file named "favicon". It will be converted to a icon (.ico) and resized to the correct dimensions for a favicon.</p>
+								<ul class="radiolist">
+									<li><input type="radio" name="misc_favicon" id="misc_favicon_n"> <label for="misc_favicon_n">No</label></li>
+									<li><input type="radio" name="misc_favicon" id="misc_favicon_y"> <label for="misc_favicon_y">Yes</label></li>
+								</ul>
+							</div>
+							<a href="javascript:toggle('5')" class="clean"><img src="img/plus.png" alt="" class="opener" id="config_opener_5"></a>
+						</div>
+					</div>
+					<div class="twocol"><!--[column 2]-->
+						<div class="halfcol_l">
+							<label for="name">Name</label><br><input type="text" name="name" id="name" class="text"><br>
+						</div>
+						<div class="halfcol_r">
+							<label for="email">Email</label><br><input type="text" name="email" id="email" class="text"><br>
+						</div>
+						<div class="clear"></div>
+						<label for="upload">Upload</label>
+						<div class="fileinputs">
+							<input type="file" class="file" id="upload" name="upload">
+						</div>
+						<label for="upload">or Link</label><br><input type="text" class="text" name="link" id="link" style="width:100%">
+						<p class="form_notes" style="margin-bottom:0">Please upload your design packed in a .zip file. It should include your design in the format of .psd, .xcf, or as a layered .png, along with any other files needed (favicons, fonts, etc).</p>
+						<br><label for="notes">Notes:</label>
+						<textarea name="notes" id="notes" rows="10" cols="50"></textarea>
+						<p class="form_notes">You should include all additional information here, including specific instructions not covered by the options to the left.</p>
+						<input type="checkbox" name="terms" id="terms"><label for="terms">I accept the Terms and Conditions</label>
+						<p class="form_notes">If you haven't yet read our terms, you should do that now.</p>
+						<div class="center">
+							<div class="button" style="width:116px;margin:0 auto 0 auto;float:none;"><!-- [button] -->
+								<img alt="" src="img/buttons/red_left.png" class="button_left button_left_iefix">
+								<input type="submit" class="button_mid button_red" value="Order Now" style='width:86px'>
+								<img alt="" src="img/buttons/red_right.png" class="button_right">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="clear"><br></div>
+		</div>
+		<div id="footer"><!-- [FOOTER] -->
+			<div class="content">
+				<div id="footer_left">
+					<ul class="footermenu"><!-- Footer Menu -->
+						<li class="footermenuitem"><a href="index.htm" class="home">Home</a></li><li class="footermenuitem separator"> &middot;</li>
+						<li class="footermenuitem"><a href="order.htm" class="order">Order</a></li><li class="footermenuitem separator"> &middot;</li>
+						<li class="footermenuitem"><a href="about.htm" class="about">About</a></li><li class="footermenuitem separator"> &middot;</li>
+						<li class="footermenuitem"><a href="portfolio.htm" class="portfolio">Portfolio</a></li><li class="footermenuitem separator"> &middot;</li>
+						<li class="footermenuitem"><a href="contact.htm" class="contact">Contact</a></li>
+					</ul>
+					<!-- Copyright -->
+					<span id="copyright">Copyright 2008-2010 Nathan Babcock. Icons from <a href="http://www.pixel-mixer.com/" target="_blank">Pixel Mixer</a> and <a href="http://www.iconfinder.com/" target="_blank">IconFinder</a>.</span>
+				</div>
+				<div id="footer_right">
+					<ul class="footermenu">
+						<li class="footermenuitem"><a href="terms.htm" class="terms">Terms</a></li><li class="footermenuitem separator"> &middot;</li>
+						<li class="footermenuitem"><a href="privacy.htm" class="privacy">Privacy</a></li>
+					</ul>
+					<span id="validation"><a href="#">HTML</a> <span class="separator">&middot;</span> <a href="#">CSS</a> <span class="separator">&middot;</span> <a href="#">508</a></span>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>
